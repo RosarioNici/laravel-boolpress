@@ -19,7 +19,7 @@ class PostSeeder extends Seeder
             $post->title = $faker->realText($maxNbChars = 200, $indexSize = 2);
             $post->content = $faker->text();
 
-            $slug = String::slug($post->title);
+            $slug = Str::slug($post->title);
             $slug_base = $slug;
             $counter = 1;
             $existingPost = Post::where('slug', $slug)->first();
