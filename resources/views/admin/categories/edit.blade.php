@@ -10,13 +10,13 @@
         </div>
     @endif
 
-    <form action="{{ route('admin.categories.store') }}" method="POST">
+    <form action="{{ route('admin.categories.update', $category->id) }}" method="POST">
         @csrf
-
+        @method('PUT')
 
         <div @error('name') class="is-invalid" @enderror>
             <label for="name">Category name:</label>
-            <input type="text" name="name" maxlength="30" value="{{ old('name', '') }}">
+            <input type="text" name="name" maxlength="30" value="{{ old('name', $category->name) }}">
             @error('name')
                 <div class="text-danger">
                     {{ $message }}
@@ -24,7 +24,7 @@
             @enderror
         </div>
         <div>
-            <input type="submit" value="Crea">
+            <input type="submit" value="Aggiorna">
         </div>
     </form>
 @endsection
