@@ -13,7 +13,7 @@ class TagSeeder extends Seeder
     public function run()
     {
         //
-        $tags = ['Rock', 'Blues', 'Metal', 'EDM', 'House', 'Jazz', 'Punk', 'Trento', 'Milano', 'Roma', 'Catania'];
+        $tags = ['Rock', 'Blues', 'Metal', 'House', 'Jazz', 'Punk', 'Verona', 'Palermo', 'Torino', 'Napoli'];
 
         foreach ($tags as $model) {
             $tag = new Tag();
