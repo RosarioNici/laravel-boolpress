@@ -44,13 +44,11 @@ Route::middleware('auth')
             'categories' => 'category:slug',
         ]);
 
-        Route::resource('tags', 'TagController')->parameters(['tags' => 'tag:slug']);
-
-        // Route::get('/custom/{category:slug}', 'CustomController@index')->name('custom');
+        Route::resource('tags', 'TagController', ['except' => ['create', 'store']])
+            ->parameters(['tags' => 'tag:slug']);
     });
 
 
 Route::get("{any?}", function () {
     return redirect()->route('index');
-    //    return view("guest.home");
 })->where("any", ".*");
