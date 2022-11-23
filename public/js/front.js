@@ -50523,8 +50523,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\MAMP\bin\php\laravel-api\resources\js\front.js */"./resources/js/front.js");
-module.exports = __webpack_require__(/*! C:\MAMP\bin\php\laravel-api\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\MAMP\bin\php\laravel-boolpress\resources\js\front.js */"./resources/js/front.js");
+module.exports = __webpack_require__(/*! C:\MAMP\bin\php\laravel-boolpress\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
